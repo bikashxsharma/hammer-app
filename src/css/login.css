@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 8px;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-grey {
+  color: #E6E6E6;
+}
+
+.mainCTA {
+  background-color: #109CF1;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.mainCTA:hover {
+  background-color: #0294ee;
+  cursor: pointer;
+}
+
+.App {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1040px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navbar {
+  background-color: #109CF1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.01);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .navbar-content {
+  max-width: 1040px;
+  margin: auto;
+}
+
+.navbar .navbar-content .navbar-items {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-content .navbar-items .nav-cta {
+  margin-left: auto;
+  color: #FFFFFF;
+}
+
+.navbar .navbar-content .navbar-items .nav-cta:hover {
+  color: #363535;
+  cursor: pointer;
+}
+
+.navbar .navbar-content .navbar-items .nav-search {
+  margin-left: 55px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #E6E6E6;
+  border-radius: 10px;
+  border: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.navbar .navbar-content .navbar-items .nav-search:focus {
+  border: 1px solid #109cf133;
+  border-radius: 10px;
+}
+
+.left-feed {
+  margin: 10px 10px 10px 0px;
+  max-width: 220px;
+  background-color: #FFFFFF;
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+}
+
+.left-feed p {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.left-feed p a {
+  color: #109CF1;
+}
+
+.main-feed {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 5px 10px 230px;
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 12px;
+}
+
+.post-input-box {
+  border: 1px solid #E6E6E6;
+  padding: 10px;
+}
+
+.post-input-box .post-input-area {
+  padding: 10px;
+}
+
+.post-input-box .post-input-area .user-profile-pic img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.login-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.login-container .login-main {
+  width: 520px;
+}
+
+.login-container .login-main .login-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-main .login-logo p {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #363535;
+  padding-top: 10px;
+}
+
+.login-container .login-main .login-logo span {
+  border-right: 2px solid rgba(230, 230, 230, 0.363);
+  height: 20px;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.login-container .login-main .login-logo img {
+  margin-left: 15px;
+}
+
+.login-container .login-main .login-content {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 40px 50px 20px 50px;
+}
+
+.login-container .login-main .login-content .facebook-button {
+  height: 50px;
+  background: #4E6CAB;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.login-container .login-main .login-content .facebook-button:hover {
+  cursor: pointer;
+}
+
+.login-container .login-main .login-content .facebook-button p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.login-container .login-main .login-content .facebook-button img {
+  height: 50px;
+  margin: 0px 10px;
+}
+
+.login-container .login-main .login-content .line {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.363);
+  line-height: 0.1em;
+  margin: 25px 0 20px;
+}
+
+.login-container .login-main .login-content .line span {
+  color: rgba(230, 230, 230, 0.363);
+  background-color: #FFFFFF;
+  padding: 0 10px;
+}
+
+.login-container .login-main .login-content .login-form {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.login-container .login-main .login-content .login-form .form-group {
+  margin-bottom: 30px;
+}
+
+.login-container .login-main .login-content .login-form .form-group label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.login-container .login-main .login-content .login-form .form-group label p {
+  margin-left: auto;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.login-container .login-main .login-content .login-form .form-group input {
+  border-radius: 10px;
+  padding: 15px 5px;
+  background-color: #109bf11e;
+  border: none;
+  width: 100%;
+}
+
+.login-container .login-main .login-content .login-form .form-group input ::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(230, 230, 230, 0.363);
+}
+
+.login-container .login-main .login-content .login-form .form-group input :-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(230, 230, 230, 0.363);
+}
+
+.login-container .login-main .login-content .login-form .form-group input ::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(230, 230, 230, 0.363);
+}
+
+.login-container .login-main .login-content .login-form .form-group input ::placeholder {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgba(230, 230, 230, 0.363);
+}
+
+.login-container .login-main .login-content .sign-up-terms {
+  font-weight: 400;
+  color: #E6E6E6;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .login-main .login-content .sign-up-terms input[type='checkbox'] {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #109bf11e;
+}
+
+.login-container .login-main .login-content .sign-up-terms p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.login-container .login-main .login-content button {
+  margin-right: auto;
+  width: 50%;
+}
+
+.login-container .login-main .login-content a {
+  color: #109CF1;
+}
+
+.login-container .login-main .login-content a:hover {
+  color: #0294ee;
+}
+
+.login-container .login-main .login-content p {
+  margin: 20px 0px 10px 0px;
+}
+/*# sourceMappingURL=login.css.map */
