@@ -85,10 +85,14 @@ body{
             .nav-cta{
                 margin-left: auto;
                 color:$mainWhite;
-                &:hover{
-                    color:$textMain;
-                    cursor: pointer;
-                }
+                a{
+                    color:$mainWhite;
+                    &:hover{
+                        color:$textMain;
+                        cursor: pointer;
+                    }
+                    }
+               
             }
             .nav-search{
                 margin-left:55px;

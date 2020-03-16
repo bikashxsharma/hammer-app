@@ -95,7 +95,11 @@ body {
   color: #FFFFFF;
 }
 
-.navbar .navbar-content .navbar-items .nav-cta:hover {
+.navbar .navbar-content .navbar-items .nav-cta a {
+  color: #FFFFFF;
+}
+
+.navbar .navbar-content .navbar-items .nav-cta a:hover {
   color: #363535;
   cursor: pointer;
 }
