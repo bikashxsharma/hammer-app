@@ -22,6 +22,13 @@ const MainFeed = () => {
                 "texts": "Wow! Antwerp at the top in the prestigious ‘European Cities & Regions of the Future 2020/2021’ ranking from the #Financial Times. With a 2nd place for fDi #strategy and a 5th place for #connectivity, Antwerp is a city to watch for foreign investors. Join a world of opportunities #businessinantwerp #sustainablechemistry #aworldofopportunities #ECRF20",
                 "hammerCount": "20"
             }} />
+            <Post post={{
+                "image": "https://randomuser.me/api/portraits/women/75.jpg",
+                "userName": "Bikash S",
+                "postedTime": "1 day ago",
+                "texts": "Cool stuffs happening stigious ‘European Cities & Regions of the Future 2020/2021’ ranking from the #Financial Times. With a 2nd place for fDi #strategy and a 5th place for #connectivity, Antwerp is a city to watch for foreign investors. Join a world of opportunities #businessinantwerp #sustainablechemistry #aworldofopportunities #ECRF20",
+                "hammerCount": "21"
+            }} />
 
 
 
