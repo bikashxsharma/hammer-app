@@ -219,6 +219,7 @@ body {
 }
 
 .post-box {
+  margin-bottom: 20px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.06);
