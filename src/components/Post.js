@@ -1,8 +1,9 @@
 
 import React from 'react';
-import hammerIcon from "../assets/hammer-icon.svg"
+
 
 //components
+import HammerButton from "./HammerButton"
 
 
 const Post = (props) => {
@@ -30,9 +31,8 @@ const Post = (props) => {
                 </div>
                 <div className="line"></div>
                 <div className="hammer-area">
-                    <div className="hammer-button">
-                        <p>20</p> <img src={hammerIcon} alt="hammer-icon" />
-                    </div>
+                    <HammerButton hammerCount={props.post.hammerCount} />
+
                 </div>
 
             </div>
@@ -41,7 +41,7 @@ const Post = (props) => {
             </div>
 
 
-        </div>
+        </div >
 
 
     )

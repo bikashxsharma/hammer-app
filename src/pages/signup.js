@@ -16,11 +16,8 @@ const signup = () => {
                     <img src={logo} alt="Hammer logo" />
                 </div>
                 <div className="login-content">
-                    <div className="facebook-button">
-                        <img src={fblogo} alt="facebook logo" />
-                        <p>Connect with Facebook</p>
-                    </div>
-                    <p className="line"><span>or</span></p>
+                   
+                    
                     <form className="login-form">
                         <div className="form-group">
                             <label className="email-label">Email Address</label>
