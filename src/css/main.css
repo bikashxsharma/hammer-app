@@ -196,10 +196,11 @@ body {
   margin-right: 5px;
   color: #363535;
   font-family: Roboto;
-  width: 70%;
+  width: 100%;
   display: block;
+  overflow: hidden;
   height: 100%;
-  min-height: 50px;
+  min-height: 76px;
 }
 
 .post-input-box .post-input-area .post-input textarea ::-webkit-input-placeholder {
@@ -330,13 +331,18 @@ body {
 
 .post-box .post-content .hammer-area .hammer-button img {
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition-duration: 0.08s;
+          transition-duration: 0.08s;
 }
 
 .post-box .post-content .hammer-area .hammer-button img:hover {
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
+}
+
+.post-box .post-content .hammer-area .hammer-button img:active {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .post-box .post-box-footer {

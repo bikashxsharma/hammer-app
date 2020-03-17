@@ -170,15 +170,16 @@ body{
                 
                 textarea{                    
                     background-color: transparent;
-                    border:none;
+                    border: none;
                     resize: none;
-                    margin-right:5px;
-                    color:$textMain;
+                    margin-right: 5px;
+                    color: #363535;
                     font-family: Roboto;
-                    width:70%;
-                    display:block;
-                    height:100%;
-                    min-height: 50px;
+                    width: 100%;
+                    display: block;
+                    overflow: hidden;
+                    height: 100%;
+                    min-height: 76px;
                     ::placeholder{
                         color:$greyTransparent;
                     }
@@ -251,7 +252,7 @@ body{
                     color:$primary;
                     border:1px solid $primary;
                     cursor: pointer;
-                }
+                }                
                 p{
                     font-weight: weight(bold);
                     color:$grey;
@@ -260,14 +261,22 @@ body{
                     &:hover{
                         color:$primary;
                         
-                    }                  
+                    }
+                                      
                 }
                 img{
                     cursor: pointer;
-                    transition: 0.2s;
+                    transition-duration: 0.08s;
+                   
                     &:hover{
-                        transform: rotate(20deg);
-                    }                
+                        transform: rotate(20deg);                   
+                       
+
+                    }
+                    &:active{
+                        transform: rotate(-10deg);
+                    } 
+                              
                 }
                 
             }

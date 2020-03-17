@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Link } from "react-router-dom";
 
 
 import logo from "../assets/logo_blue.png"
-import fblogo from "../assets/fb-logo.png"
 
-const signup = () => {
+const Signup = () => {
+
+    const[fullname, setFullname]=useState(null);
+    const[email, setEmail]=useState(null);
+    const[password, setPassword]=useState(null);
+
+    useEffect(()=>{
+       
+        console.log(fullname);
+    })
+        
+    
+  
+
+    const handleChange =(e)=>{
+       
+    }
+       
+    
 
     return (<div>
         <div className="login-container">
@@ -17,11 +34,15 @@ const signup = () => {
                 </div>
                 <div className="login-content">
                    
-                    
-                    <form className="login-form">
+                     <form className="login-form">
+                        <div className="form-group">
+                            <label className="email-label">Full Name</label>
+                            <input type="text" name="Fullname" placeholder="e.g John Doe" onChange={handleChange} />
+                        </div>
+                   
                         <div className="form-group">
                             <label className="email-label">Email Address</label>
-                            <input type="text" name="email" />
+                            <input type="email" name="Email" onChange={handleChange}/>
                         </div>
 
                         <div className="form-group">
@@ -29,7 +50,7 @@ const signup = () => {
                                 
                             </label>
 
-                            <input type="password" name="password" placeholder="At least 7 characters" />
+                            <input type="password" name="Password" placeholder="At least 7 characters" onChange={handleChange} />
                         </div>
                         <div className="sign-up-terms">
                         <input type="checkbox" />
@@ -39,7 +60,7 @@ const signup = () => {
                         <button className="mainCTA">Sign up</button>
 
                     </form>
-                    <p>Already a member? <a href=""><Link to="/login">Sign in</Link></a></p>
+                    <p>Already a member? <Link to="/login">Sign in</Link></p>
                 </div>
             </div>
         </div>
@@ -49,4 +70,4 @@ const signup = () => {
 
 }
 
-export default signup;
+export default Signup;
