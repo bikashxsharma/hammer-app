@@ -1,4 +1,6 @@
-<img src="./src/assets/logo_blue.png" /> 
+<img src="images/hammer-home-screenshot.png" /> 
+
+### Check live demo at https://hammerit.netlify.com/
 
 *Social Media concept* 
 >  Users can make posts, browse through others' post and react by giving a hammer ( identical to like reaction)
@@ -21,7 +23,7 @@
 - run `npm install` ( assuming you have react enviroment setup)
 - run `npm start`
 
-<img src="images/hammer-home-screenshot.png" />
+
 
 *Signup page*
 <img src="images/hammer-signup-screenshot.png" />
