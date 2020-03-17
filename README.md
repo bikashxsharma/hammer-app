@@ -21,3 +21,7 @@
 - run `npm install` ( assuming you have react enviroment setup)
 - run `npm start`
 
+<img src="images/hammer-home-screenshot.png" />
+
+*Signup page*
+<img src="images/hammer-signup-screenshot.png" />
