@@ -7,23 +7,6 @@ import logo from "../assets/logo_blue.png"
 
 const Signup = () => {
 
-    const[fullname, setFullname]=useState(null);
-    const[email, setEmail]=useState(null);
-    const[password, setPassword]=useState(null);
-
-    useEffect(()=>{
-       
-        console.log(fullname);
-    })
-        
-    
-  
-
-    const handleChange =(e)=>{
-       
-    }
-       
-    
 
     return (<div>
         <div className="login-container">
@@ -37,12 +20,12 @@ const Signup = () => {
                      <form className="login-form">
                         <div className="form-group">
                             <label className="email-label">Full Name</label>
-                            <input type="text" name="Fullname" placeholder="e.g John Doe" onChange={handleChange} />
+                            <input type="text" name="Fullname" required placeholder="e.g John Doe"  />
                         </div>
                    
                         <div className="form-group">
                             <label className="email-label">Email Address</label>
-                            <input type="email" name="Email" onChange={handleChange}/>
+                            <input type="email" name="Email" required />
                         </div>
 
                         <div className="form-group">
@@ -50,14 +33,14 @@ const Signup = () => {
                                 
                             </label>
 
-                            <input type="password" name="Password" placeholder="At least 7 characters" onChange={handleChange} />
+                            <input type="password" name="Password" required placeholder="At least 7 characters" />
                         </div>
                         <div className="sign-up-terms">
                         <input type="checkbox" />
                         <p>By creating an account you agree our <a href="">Terms</a> and  <a href="">Privacy Policy</a></p>
                         </div>
 
-                        <button className="mainCTA">Sign up</button>
+                        <button className="mainCTA" >Sign up</button>
 
                     </form>
                     <p>Already a member? <Link to="/login">Sign in</Link></p>
