@@ -1,13 +1,7 @@
-import React from 'react';
+
 
 const dummyData = [
-    {
-        "image": "https://randomuser.me/api/portraits/women/70.jpg",
-        "userName": "Joonas K",
-        "postedTime": "2 weeks ago",
-        "texts": "Wow! Antwerp at the top in the prestigious ‘European Cities & Regions of the Future 2020/2021’ ranking from the #Financial Times. With a 2nd place for fDi #strategy and a 5th place for #connectivity, Antwerp is a city to watch for foreign investors. Join a world of opportunities #businessinantwerp #sustainablechemistry #aworldofopportunities #ECRF20",
-        "hammerCount": "20"
-    },
+
     {
         "image": "https://randomuser.me/api/portraits/women/75.jpg",
         "userName": "Arto A",

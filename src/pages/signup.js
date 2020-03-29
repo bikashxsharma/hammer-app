@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const Signup = () => {
                         </div>
                         <div className="sign-up-terms">
                         <input type="checkbox" />
-                        <p>By creating an account you agree our <a href="">Terms</a> and  <a href="">Privacy Policy</a></p>
+                        <p>By creating an account you agree our <a href="/">Terms</a> and  <a href="/">Privacy Policy</a></p>
                         </div>
 
                         <button className="mainCTA" >Sign up</button>

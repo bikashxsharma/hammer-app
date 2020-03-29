@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import logo from "../assets/logo_blue.png"
-import fblogo from "../assets/fb-logo.png"
 
 const login = () => {
 
@@ -33,7 +32,7 @@ const login = () => {
                             <button className="mainCTA">Sign in</button>
 
                         </form>
-                        <p>Not a member? <a href=""><Link to="/signup">Sign up now</Link></a></p>
+                        <p>Not a member? <Link to="/signup">Sign up now</Link></p>
                     </div>
                 </div>
             </div>

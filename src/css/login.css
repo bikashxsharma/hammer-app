@@ -221,6 +221,9 @@ body {
 
 .post-input-box button {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .post-box {
@@ -336,13 +339,13 @@ body {
 }
 
 .post-box .post-content .hammer-area .hammer-button img:hover {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .post-box .post-content .hammer-area .hammer-button img:active {
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .post-box .post-box-footer {

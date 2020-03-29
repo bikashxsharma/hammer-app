@@ -17,7 +17,7 @@ const Post = (props) => {
             <div className="post-content">
                 <div className="user-info">
                     <div className="user-pic">
-                        <img src={props.post.image} alt="user picture" />
+                        <img src={props.post.image} alt="user" />
 
                     </div>
                     <div className="name-time">
@@ -31,7 +31,7 @@ const Post = (props) => {
                 </div>
                 <div className="line"></div>
                 <div className="hammer-area">
-                    <HammerButton hammerCount={props.post.hammerCount} />
+                    <HammerButton dataIndex={props.dataIndex} hammerCount={props.post.hammerCount} />
 
                 </div>
 

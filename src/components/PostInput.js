@@ -1,9 +1,21 @@
 import React from 'react';
 
+import { useDispatch } from 'react-redux'
+
+import newPost from '../actions/newPost'
 //components
 
 
+
 const PostInput = (props) => {
+
+    const dispatch = useDispatch();
+    const handleInput = (evt) => {
+        evt.preventDefault();
+        let inputValue = document.getElementById("post-text").value;
+        dispatch(newPost(inputValue))
+        document.getElementById("post-text").value = '';
+    }
 
 
     return (
@@ -11,18 +23,22 @@ const PostInput = (props) => {
 
 
         <div className="post-input-box">
-            <div className="post-input-area">
-                <div className="user-profile-pic">
-                    <img src={props.inputUser.image} alt="user picture" />
-                </div>
-                <div className="post-input">
-                    <textarea placeholder={props.inputUser.placeholder}></textarea>
+            <form>
+                <div className="post-input-area">
+                    <div className="user-profile-pic">
+                        <img src={props.inputUser.image} alt="user " />
+                    </div>
+
+                    <div className="post-input">
+                        <textarea id="post-text" placeholder={props.inputUser.placeholder} ></textarea>
+
+                    </div>
 
                 </div>
 
-            </div>
+                <button type="submit" className="mainCTA" onClick={handleInput}>{props.inputUser.buttonLabel}</button>
+            </form>
 
-            <button className="mainCTA">{props.inputUser.buttonLabel}</button>
         </div>
 
 

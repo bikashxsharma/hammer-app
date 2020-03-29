@@ -221,6 +221,9 @@ body {
 
 .post-input-box button {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .post-box {
