@@ -12,7 +12,7 @@
 
 *Future plan*
 - To use Google firebase for backend and database
-- Redux for state management
+- Attach real time stamp, and show latest post on top
 
 *What I have done so far?*
 - Created components for Post, Hammer, Post input & Navbar
