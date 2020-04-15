@@ -26,7 +26,6 @@ const initState = {
 }
 
 const postsReducer = (state = initState, action) => {
-    console.log(action)
     switch (action.type) {
         case "NEWPOST":
             let newPosts = [...state.posts]

@@ -93,6 +93,7 @@ body {
 .navbar .navbar-content .navbar-items .nav-cta {
   margin-left: auto;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .navbar .navbar-content .navbar-items .nav-cta a {

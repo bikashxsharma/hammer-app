@@ -5,9 +5,10 @@ import Navbar from '../components/Navbar'
 import LeftFeed from '../components/LeftFeed'
 import MainFeed from '../components/MainFeed'
 
-//pages
 
-const home = () => {
+
+const Home = () => {
+
 
     return (
         <div>
@@ -23,6 +24,7 @@ const home = () => {
     )
 
 
+
 }
 
-export default home;
+export default Home;

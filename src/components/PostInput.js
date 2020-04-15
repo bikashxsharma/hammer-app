@@ -30,7 +30,7 @@ const PostInput = (props) => {
                     </div>
 
                     <div className="post-input">
-                        <textarea id="post-text" placeholder={props.inputUser.placeholder} ></textarea>
+                        <textarea id="post-text" placeholder={props.inputUser.placeholder} required></textarea>
 
                     </div>
 
