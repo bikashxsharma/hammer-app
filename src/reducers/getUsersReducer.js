@@ -1,22 +1,25 @@
-import React from "react"
+import {useState, useEffect} from "react"
 import axios from "axios"
 
-let users = []
-const getDataFromApi = () => {
-  axios
-    .get("https://us-central1-hammer-app.cloudfunctions.net/getUsers")
-    .then((res) => {
-      const datas = res.data
-      users = datas
-      return users
-    })
-    .catch((err) => console.log("Error k aayo:" + err))
-}
-const initState = {
-  users: getDataFromApi(),
-}
+const [users, setUsers] = useState("")
+const [isLoading, setisLoading] = useState(false)
 
-const getUsersReducer = (state = initState, action) => {
+useEffect(() => {
+  axios
+    .get(
+      "https://cors-anywhere.herokuapp.com/https://us-central1-hammer-app.cloudfunctions.net/api/users"
+    )
+    .then((response) => {
+      setUsers(response.data)
+      setisLoading(true)
+      console.log(response.data)
+    })
+    .catch((err) => console.log(err))
+}, [])
+
+console.log("From reducer" + users)
+
+const getUsersReducer = (state = users, action) => {
   return state
 }
 export default getUsersReducer

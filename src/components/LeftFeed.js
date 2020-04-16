@@ -1,39 +1,33 @@
 import React from "react"
 import {useSelector} from "react-redux"
 
-import axios from "axios"
-import fire from "../config/Fire"
-
 //components
 
 const LeftFeed = () => {
-  let users = []
+  const users = useSelector((state) => state.getUsersReducer)
+  console.log(users)
+  const isLoading = false
 
-  axios
-    .get("https://us-central1-hammer-app.cloudfunctions.net/getUsers")
-    .then((response) => {
-      console.log(response.data)
-      console.log(response.status)
-      console.log(response.statusText)
-      console.log(response.headers)
-      console.log(response.config)
-    })
-    .catch((err) => console.log(err))
-
-  return (
-    <div className="left-feed">
-      <div className="text-bold text-main">Followers</div>
-      <p>
-        <a href="/">Bikash</a>
-      </p>
-      <p>
-        <a href="/">Arto</a>
-      </p>
-      <p>
-        <a href="/">Joonas</a>
-      </p>
-    </div>
-  )
+  if (!isLoading) {
+    return (
+      <div className="left-feed">
+        <div className="text-bold text-main">Followers</div>
+        <p>Loading users..</p>
+      </div>
+    )
+  } else {
+    return (
+      <div className="left-feed">
+        <div className="text-bold text-main">Followers</div>
+        {users.map((user) => (
+          <p key={user.userId}>
+            {" "}
+            <a href="/">{user.firstName}</a>
+          </p>
+        ))}
+      </div>
+    )
+  }
 }
 
 export default LeftFeed
