@@ -1,9 +1,8 @@
 const newPost = (value) => {
-    return {
-        type: "NEWPOST",
-        payload: value
-    }
-
+  return {
+    type: "NEWPOST",
+    payload: value,
+  }
 }
 
-export default newPost;
+export default newPost
