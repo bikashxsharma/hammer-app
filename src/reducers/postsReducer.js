@@ -40,6 +40,7 @@ const postsReducer = (state = initState, action) => {
     //     posts: getDataFromStorage(),
     //   })
     case "INCREASEHAMMER":
+      return state
     //   let newPosts1 = [...state.posts]
     //   newPosts1[action.payload].hammerCount = (
     //     parseInt(newPosts1[action.payload].hammerCount, 10) + 1
