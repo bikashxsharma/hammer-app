@@ -1,12 +1,13 @@
-import postsReducer from './postsReducer'
-import isLoggedInReducer from './isLoggedInReducer'
+import postsReducer from "./postsReducer"
+import isLoggedInReducer from "./isLoggedInReducer"
+import getUsersReducer from "./getUsersReducer"
 
-import { combineReducers } from 'redux';
+import {combineReducers} from "redux"
 
 const allReducers = combineReducers({
-    postsReducer,
-    isLoggedInReducer,
-
+  postsReducer,
+  isLoggedInReducer,
+  getUsersReducer,
 })
 
-export default allReducers;
+export default allReducers

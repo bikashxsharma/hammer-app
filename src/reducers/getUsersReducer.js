@@ -1,25 +1,21 @@
-import {useState, useEffect} from "react"
-import axios from "axios"
+const intitalState = {
+  users: [],
+  isLoading: true,
+}
 
-const [users, setUsers] = useState("")
-const [isLoading, setisLoading] = useState(false)
-
-useEffect(() => {
-  axios
-    .get(
-      "https://cors-anywhere.herokuapp.com/https://us-central1-hammer-app.cloudfunctions.net/api/users"
-    )
-    .then((response) => {
-      setUsers(response.data)
-      setisLoading(true)
-      console.log(response.data)
-    })
-    .catch((err) => console.log(err))
-}, [])
-
-console.log("From reducer" + users)
-
-const getUsersReducer = (state = users, action) => {
-  return state
+const getUsersReducer = (state = intitalState, action) => {
+  switch (action.type) {
+    case "LOAD_USERS":
+      return (state = {
+        users: action.payload,
+        isLoading: false,
+      })
+    case "USER_IS_LOADING":
+      return (state = {
+        isLoading: true,
+      })
+    default:
+      return state
+  }
 }
 export default getUsersReducer
