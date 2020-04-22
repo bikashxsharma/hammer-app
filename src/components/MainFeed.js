@@ -10,6 +10,7 @@ import Post from "./Post"
 
 const MainFeed = () => {
   const posts = useSelector((state) => state.postsReducer.posts)
+  const isLoading = useSelector((state) => state.postsReducer.isLoading)
 
   return (
     <div className="main-feed">
@@ -20,6 +21,8 @@ const MainFeed = () => {
           buttonLabel: "Post",
         }}
       />
+      <p style={{display: isLoading ? "inline" : "none"}}>Loading...</p>
+
       {posts.map((post, id) => (
         <Post key={id} dataIndex={id} post={post} />
       ))}

@@ -4,8 +4,6 @@ import {useSelector} from "react-redux"
 const LeftFeed = () => {
   const users = useSelector((state) => state.getUsersReducer.users)
   const isLoading = useSelector((state) => state.getUsersReducer.isLoading)
-  console.log("Users ko data:" + users)
-  console.log("Load bho:" + isLoading)
 
   return (
     <div className="left-feed">

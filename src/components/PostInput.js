@@ -3,7 +3,6 @@ import React from "react"
 import {useDispatch} from "react-redux"
 
 import newPost from "../actions/newPost"
-import getUsers from "../actions/getUsers"
 //components
 
 const PostInput = (props) => {
